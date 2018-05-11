@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "sass-lint -s ./src/sass/*.sass && pug-lint ./src/pages/*.pug"
@@ -10,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^1.0.0-rc.4",
     "pug-lint": "^2.5.0",
     "sass-lint": "^1.12.1"
   }
