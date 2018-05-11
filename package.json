@@ -1,0 +1,16 @@
+{
+  "name": "che-ban-de-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "sass-lint -s ./src/sass/*.sass && pug-lint ./src/pages/*.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pug-lint": "^2.5.0",
+    "sass-lint": "^1.12.1"
+  }
+}
