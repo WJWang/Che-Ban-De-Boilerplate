@@ -1,6 +1,5 @@
 ## Che-Ban-De Boilerplate
-----
-- 就是只切版用的
+#### 就是只切版用的
 
 ## Tool
 
@@ -15,13 +14,13 @@
 - package `*.pug` & `*.sass` to `*.html`, `*.css`
 
 ## ENV
-- node, npm
+- node(v8.9.3), npm(v5.5.1)
 
 ## Usage
 
 ### With npm scripts
-- npm run build : package all files to dist.
-- npm run dev : livereload and present result with browserSync.
+- `npm run build` : package all files to dist.
+- `npm run dev` : livereload and present result with browserSync.
 
 ### With gulp
 ```
