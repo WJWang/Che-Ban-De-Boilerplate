@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint *.js && sass-lint -s src/sass/*.sass && pug-lint src/pages/*.pug",
     "pretty": "node bin/formatter.js",
-    "dev": "gulp watch",
+    "dev": "rm -rf dist && mkdir dist && node bin/generateCatalog.js && gulp serve",
     "build": "gulp"
   },
   "author": "",
@@ -23,6 +23,7 @@
     "shelljs": "^0.8.2"
   },
   "devDependencies": {
+    "browser-sync": "^2.24.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
